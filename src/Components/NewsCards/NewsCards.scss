@@ -1,0 +1,17 @@
+/** @format */
+
+.newsCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+
+  padding: 20px;
+
+  @media only screen and (max-width: 1250px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

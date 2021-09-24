@@ -1,0 +1,46 @@
+/** @format */
+
+.sectionAndsourceInfo {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
+  span {
+    color: #222;
+    font-weight: 600;
+  }
+  margin-bottom: 10px;
+}
+.articleTitle {
+  line-height: 1.2;
+  color: #222;
+  font-weight: 600;
+  font-size: 18px;
+}
+.articleAbstract {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #888;
+  max-height: 63px;
+  overflow: hidden;
+}
+.journalistInfoDiv {
+  margin-top: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .journalistImg {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+    margin: 0px 10px;
+  }
+  .journalistName {
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}

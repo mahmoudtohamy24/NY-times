@@ -1,0 +1,69 @@
+/** @format */
+
+.navbar-Container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 8%;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .returnToSearch {
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+  }
+  .searchInputContainer {
+    border: 1px solid #ced4da;
+    border-color: #ccc;
+    border-radius: 30px;
+    height: 38px;
+    font-size: 14px;
+    width: 230px;
+    z-index: 2;
+    input {
+      z-index: 1;
+      height: 34px;
+      width: 81%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .pageTitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #000 !important;
+    font-weight: 700;
+    top: 6;
+    cursor: pointer;
+  }
+  .sectionsMenu {
+    svg {
+      width: 28px;
+      height: 32px;
+      float: right;
+      cursor: pointer;
+    }
+
+    .sectionName {
+      cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 520px) {
+    grid-template-columns: repeat(1, 1fr);
+
+    .searchInputContainer {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px;
+    }
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    .sectionsMenu {
+      svg {
+        float: unset;
+      }
+    }
+  }
+}
